@@ -1,0 +1,32 @@
+# AI Glaucoma Detection - Requirements
+# Core deep learning and computer vision dependencies
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Image Processing
+Pillow>=9.5.0
+opencv-python>=4.8.0
+numpy==1.24.3
+
+# Web Interface
+gradio==3.50.2
+altair>=5.0.0
+
+# Data Visualization (for Grad-CAM)
+matplotlib>=3.6.0
+
+# Optional: For development and testing
+# jupyter>=1.0.0
+# notebook>=6.5.0
+
+# System dependencies (automatically installed)
+# - Python 3.10+
+# - pip>=21.0
+
+# Installation notes:
+# 1. Install with: pip install -r requirements.txt
+# 2. For GPU support, install PyTorch with CUDA: 
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# 3. If you encounter compatibility issues, use: pip install --force-reinstall -r requirements.txt
