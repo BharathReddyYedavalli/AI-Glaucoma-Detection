@@ -108,7 +108,7 @@ AI-Glaucoma-Detection/
 ### Command Line
 ```bash
 # Start the web interface
-python gradio_fixed.py
+python main.py
 
 # The interface will be available at:
 # - Local: http://localhost:7864
