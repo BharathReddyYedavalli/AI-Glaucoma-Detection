@@ -87,20 +87,35 @@ Input: 288x288 RGB retinal images
 
 ```
 AI-Glaucoma-Detection/
-├── main.py          # Main web interface (run this!)
-├── requirements.txt         # Python dependencies
-├── README.md               # This file
-├── EfficientNetV2/         # Primary model
+├── main.py                     # Main web interface (run this!)
+├── requirements.txt            # Python dependencies
+├── README.md                   
+├── EfficientNetV2/             # Primary model (latest)
 │   ├── best_glaucoma_model.pth
 │   ├── model.ipynb
-│   └── glaucoma_results.png
-├── ResNet50/               # Alternative model
-│   ├── best_glaucoma_model.pth
-│   ├── model.ipynb
-│   └── glaucoma_training_results.png
-└── MobileNetV3-Large/      # Lightweight model
-    ├── best_glaucoma_model.pth
-    └── model.ipynb
+│   ├── efficientnetv2_training_results.png
+│   ├── efficientnetv2_test_results.png
+│   ├── efficientnetv2_validation_metrics.png
+│   ├── test_results.json
+│   └── train/val/test_split.csv
+└── Backup Models/              # Previous model versions
+    ├── EfficientNet/           # EfficientNet implementation
+    │   ├── best_glaucoma_model.pth
+    │   ├── model.ipynb
+    │   ├── glaucoma_results.png
+    │   ├── final_performance_comparison.png
+    │   ├── Labels.csv
+    │   └── Images/
+    ├── ResNet50/               # ResNet50 implementation
+    │   ├── best_glaucoma_model.pth
+    │   ├── model.ipynb
+    │   ├── glaucoma_training_results.png
+    │   └── performance analysis files
+    └── MobileNetV3-Large/      # MobileNetV3-Large implementation
+        ├── best_glaucoma_model.pth
+        ├── model.ipynb
+        ├── glaucoma_results.png
+        └── performance analysis files
 ```
 
 ## Usage Examples
@@ -108,7 +123,7 @@ AI-Glaucoma-Detection/
 ### Command Line
 ```bash
 # Start the web interface
-python main.py
+python gradio_fixed.py
 
 # The interface will be available at:
 # - Local: http://localhost:7864

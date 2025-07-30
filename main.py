@@ -9,11 +9,10 @@ from PIL import Image
 import numpy as np
 import cv2
 
-# Load trained model and set to eval
 device = torch.device("cpu")
 
-# Load EfficientNetV2 model architecture (same as your trained model)
-model = efficientnet_v2_s(weights=None)  # No pretrained weights
+# Load EfficientNetV2 model architecture
+model = efficientnet_v2_s(weights=None)
 num_ftrs = model.classifier[1].in_features
 model.classifier = nn.Sequential(
     nn.Dropout(p=0.5, inplace=True),
@@ -182,7 +181,7 @@ try:
             demo.launch(
                 share=False,
                 server_name="0.0.0.0",
-                server_port=7864,
+                server_port=7865,
                 inbrowser=False
             )
 
