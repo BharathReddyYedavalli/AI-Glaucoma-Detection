@@ -45,7 +45,7 @@ python main.py
 ```
 
 4. **Access the interface:**
-   - Local: `http://localhost:7864`
+   - Local: `http://localhost:7865`
    - Public URL will be displayed in terminal
 
 ## Web Interface Features
@@ -126,7 +126,7 @@ AI-Glaucoma-Detection/
 python gradio_fixed.py
 
 # The interface will be available at:
-# - Local: http://localhost:7864
+# - Local: http://localhost:7865
 # - Public: https://[random-id].gradio.live
 ```
 
@@ -160,8 +160,8 @@ print(f"Confidence: {confidence:.2%}")
 
 **Port Already in Use:**
 ```bash
-# Kill process using port 7864
-netstat -ano | findstr :7864
+# Kill process using port 7865
+netstat -ano | findstr :7865
 taskkill /PID [process_id] /F
 ```
 
